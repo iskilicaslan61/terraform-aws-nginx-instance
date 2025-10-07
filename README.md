@@ -1,8 +1,10 @@
-Terraform Module to provision an AWS EC2 instance with the latest Amazon Linux 2023 AMI and install Nginx on it.
+Terraform Module to provision an AWS EC2 instance with the latest amazon linux 2023 ami and installed nginx in it.
 
-Not intended for production use — this is an example module demonstrating how to create and publish a Terraform Registry module.
+Not intended for production use. It is an example module.
 
+It is just for showing how to create a publish module in Terraform Registry.
 
+Usage:
 
 ```hcl
 
@@ -11,7 +13,7 @@ provider "aws" {
 }
 
 module "docker_instance" {
-    source = "<iskilicaslan61/nginx-instance/aws"
-    key_name = "write your own key name"
+    source = "iskilicaslan61/docker-instance/aws"
+    key_name = "mykey"
 }
 ```
