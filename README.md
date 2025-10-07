@@ -13,7 +13,7 @@ provider "aws" {
 }
 
 module "docker_instance" {
-    source = "iskilicaslan61/docker-instance/aws"
+    source = "iskilicaslan61/nginx-instance/aws"
     key_name = "mykey"
 }
 ```
