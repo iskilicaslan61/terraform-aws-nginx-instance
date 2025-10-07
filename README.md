@@ -2,12 +2,16 @@ Terraform Module to provision an AWS EC2 instance with the latest Amazon Linux 2
 
 Not intended for production use — this is an example module demonstrating how to create and publish a Terraform Registry module.
 
+
+
+```hcl
+
 provider "aws" {
   region = "us-east-1"
 }
 
-module "nginx_instance" {
-  source     = "iskilicaslan61/nginx-instance/aws"
-  key_name = "write your own key name"
-  
+module "docker_instance" {
+    source = "<iskilicaslan61/nginx-instance/aws"
+    key_name = "write your own key name"
 }
+```
