@@ -7,7 +7,7 @@ provider "aws" {
 }
 
 module "nginx_instance" {
-  source     = "app.terraform.io/pngparadise-terraform/nginx-instance/aws"
-  key_name   = "write your own key name"
+  source     = "iskilicaslan61/nginx-instance/aws"
+  key_name = "write your own key name"
   
 }
